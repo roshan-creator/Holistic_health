@@ -1,0 +1,106 @@
+{% extends 'index.html' %}
+
+{% block body %}
+<section class="py-5">
+    <div class="container py-xl-5 py-lg-3">
+        <h3 class="text-uppercase text-dark font-weight-bold">Find Food Nutrition</h3>
+        <hr/>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="food_image">Upload an image of your food:</label>
+                <input type="file" name="food_image" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Upload</button>
+        </form>
+        
+        {% if detected_foods %}
+        <h4 class="mt-5">Detected Foods:</h4>
+        <ul>
+            {% for food in detected_foods %}
+            <li>{{ food }}</li>
+            {% endfor %}
+        </ul>
+        
+        <h4 class="mt-4">Nutrition Details:</h4>
+        {% for food, nutrients in nutrition_details.items %}
+        <h5>{{ food }}</h5>
+        <ul>
+            {% for nutrient, amount in nutrients.items %}
+                {% if amount != 0 and amount != "0.0" %}  
+                    <li><strong>{{ nutrient }}:</strong> {{ amount }}
+                        {% if nutrient == "Energy" %} kcal{% endif %}
+                        {% if nutrient == "Protein" %} g{% endif %}
+                        {% if nutrient == "Total lipid (fat)" %} g{% endif %}
+                        {% if nutrient == "Carbohydrate, by difference" %} g{% endif %}
+                        {% if nutrient == "Fiber, total dietary" %} g{% endif %}
+                        {% if nutrient == "Total Sugars" %} g{% endif %}
+                        {% if nutrient == "Sodium, Na" %} mg{% endif %}
+                        {% if nutrient == "Iron, Fe" %} mg{% endif %}
+                        {% if nutrient == "Calcium, Ca" %} mg{% endif %}
+                        {% if nutrient == "Potassium, K" %} mg{% endif %}
+                        {% if nutrient == "Vitamin A, IU" %} IU{% endif %}
+                        {% if nutrient == "Vitamin C, total ascorbic acid" %} mg{% endif %}
+                    </li>
+                {% endif %}  
+            {% endfor %}
+        </ul>
+        {% endfor %}
+        <a href="{% url 'add_generalhealth' %}" class="btn btn-secondary mt-4">Back to Previous Page</a>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}
+
+
+{% comment %} {% extends 'index.html' %}
+
+{% block body %}
+<section class="py-5">
+    <div class="container py-xl-5 py-lg-3">
+        <h3 class="text-uppercase text-dark font-weight-bold">Find Food Nutrition</h3>
+        <hr/>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="food_image">Upload an image of your food:</label>
+                <input type="file" name="food_image" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Upload</button>
+        </form>
+        
+        {% if detected_foods %}
+        <h4 class="mt-5">Detected Foods:</h4>
+        <ul>
+            {% for food in detected_foods %}
+            <li>{{ food }}</li>
+            {% endfor %}
+        </ul>
+        
+        <h4 class="mt-4">Nutrition Details:</h4>
+        {% for food, nutrients in nutrition_details.items %}
+        <h5>{{ food }}</h5>
+        <ul>
+            {% for nutrient, amount in nutrients.items %}
+                <li><strong>{{ nutrient }}:</strong> {{ amount }}
+                    {% if nutrient == "Energy" %} kcal{% endif %}
+                    {% if nutrient == "Protein" %} g{% endif %}
+                    {% if nutrient == "Total lipid (fat)" %} g{% endif %}
+                    {% if nutrient == "Carbohydrate, by difference" %} g{% endif %}
+                    {% if nutrient == "Fiber, total dietary" %} g{% endif %}
+                    {% if nutrient == "Total Sugars" %} g{% endif %}
+                    {% if nutrient == "Sodium, Na" %} mg{% endif %}
+                    {% if nutrient == "Iron, Fe" %} mg{% endif %}
+                    {% if nutrient == "Calcium, Ca" %} mg{% endif %}
+                    {% if nutrient == "Potassium, K" %} mg{% endif %}
+                    {% if nutrient == "Vitamin A, IU" %} IU{% endif %}
+                    {% if nutrient == "Vitamin C, total ascorbic acid" %} mg{% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+        <a href="{% url 'add_generalhealth' %}" class="btn btn-secondary mt-4">Back to Previous Page</a>
+        {% endif %}
+    </div>
+</section>
+{% endblock %} {% endcomment %}

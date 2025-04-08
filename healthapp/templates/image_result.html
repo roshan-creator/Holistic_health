@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nutrition Details</title>
+</head>
+<body>
+    <h1>Detected Food Items</h1>
+    <ul>
+        {% for food in detected_foods %}
+            <li>{{ food }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Nutrition Details</h1>
+    <ul>
+        {% for key, value in total_nutrition.items %}
+            <li>{{ key|capfirst }}: {{ value }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'upload_image' %}">Upload Another Image</a>
+</body>
+</html>

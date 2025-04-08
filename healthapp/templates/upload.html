@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+{% block body %}
+<section class="logins py-5">
+    <div class="container py-xl-5 py-lg-3">
+        <div class="title-section mb-md-5 mb-4">
+            <h6 class="w3ls-title-sub"></h6>
+            <h3 class="w3ls-title text-uppercase text-dark font-weight-bold">Upload Image to Get Nutrition Info</h3>
+        </div>
+        <hr/>
+        <form action="{% url 'upload_food_image' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="image">Upload Food Image</label>
+                <input type="file" class="form-control" id="image" name="image" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,392 @@
+Disease,Diet Plan
+Fungal Infection,"Allowed Foods:
+- Low-sugar fruits: Avocado, lemons, limes
+- Non-starchy vegetables: Artichokes, broccoli, kale, tomatoes
+- Gluten-free grains: Teff, quinoa, oat bran
+- Healthy fats: Avocado, olives, coconut oil
+- Probiotic foods: Yogurt, kefir, sauerkraut
+- Lean proteins: Chicken, turkey, fish (salmon, sardines)
+- Herbs & spices: Garlic, ginger, turmeric
+Avoid Foods:
+- Sugar & refined carbs: White bread, cakes, sodas
+- Processed foods: Packaged snacks, fast food
+- Dairy (except probiotic sources)"
+Allergy,"Allowed Foods:
+- Lean meats: Chicken, turkey, fish
+- Whole grains: Brown rice, oats, quinoa
+- Vegetables: Broccoli, spinach, carrots, bell peppers
+- Fruits: Apples, pears, berries (avoid citrus if allergic)
+- Nuts & seeds: Almonds, walnuts, chia seeds
+Avoid Foods:
+- Common allergens: Dairy, eggs, peanuts, shellfish, soy
+- Processed foods with artificial additives
+- Alcohol & caffeine (can worsen reactions)"
+GERD,"Allowed Foods:
+- Complex carbohydrates: Oatmeal, brown rice, whole wheat bread
+- Lean proteins: Skinless poultry, fish, tofu, lentils
+- Vegetables: Green leafy vegetables, zucchini, carrots
+- Fruits: Bananas, melons, apples, pears (avoid acidic ones)
+- Healthy fats: Olive oil, flaxseeds, almonds
+Avoid Foods:
+- Spicy, acidic foods: Tomatoes, citrus, chili peppers
+- Caffeinated & carbonated drinks
+- Fried & high-fat foods"
+Chronic Cholestasis,"Allowed Foods:
+- High-fiber foods: Whole grains, beans, lentils
+- Vegetables: Broccoli, carrots, kale, asparagus
+- Fruits: Apples, papaya, watermelon, berries
+- Lean proteins: Chicken, fish, tofu
+- Healthy fats: Nuts, olive oil, avocado
+Avoid Foods:
+- High-fat, fried foods
+- Alcohol & processed meats
+- Excess salt & sugar"
+Drug Reaction,"Allowed Foods:
+- Leafy greens: Spinach, kale (help detoxify)
+- Antioxidant-rich foods: Blueberries, turmeric, ginger
+- Hydration: Coconut water, herbal teas, plenty of water
+- Probiotic-rich foods: Yogurt, kefir, kimchi
+- Lean proteins: Chicken, fish, tofu 
+Avoid Foods:
+- Alcohol & caffeine
+- Grapefruit (interferes with medication absorption)
+- Processed foods with artificial additives"
+Peptic Ulcer Disease,"Allowed Foods:
+- Fiber-rich foods: Oatmeal, bananas, apples, pears
+- Lean proteins: Chicken, turkey, fish, tofu, beans
+- Non-acidic vegetables: Spinach, sweet potatoes, carrots
+- Low-fat dairy: Skim milk, yogurt, cottage cheese
+- Herbal teas: Chamomile, ginger, licorice root
+Avoid Foods:
+- Spicy & acidic foods: Chili, tomatoes, citrus fruits
+- Caffeine & carbonated beverages
+- Processed & fried foods"
+AIDS,"Allowed Foods:
+- High-protein foods: Eggs, chicken, fish, beans
+- Whole grains: Brown rice, quinoa, whole wheat bread
+- Immune-boosting foods: Garlic, ginger, turmeric
+- Fruits & vegetables: Berries, citrus, spinach, carrots
+- Healthy fats: Olive oil, nuts, avocado
+Avoid Foods:
+- Processed & high-sugar foods
+- Unpasteurized dairy & raw meats
+- Alcohol & excessive caffeine"
+Diabetes,"Allowed Foods:
+- Whole grains: Oats, quinoa, whole wheat
+- Lean proteins: Chicken, fish, tofu, eggs
+- Fiber-rich vegetables: Leafy greens, cauliflower, zucchini
+- Low-GI fruits: Berries, apples, pears
+- Healthy fats: Nuts, seeds, olive oil
+Avoid Foods:
+- High-GI foods: White bread, pastries, sugary drinks
+- Saturated fats: Fried foods, processed meats
+- Alcohol & excessive salt"
+Gastroenteritis,"Allowed Foods:
+- BRAT diet: Bananas, rice, applesauce, toast (mild foods)
+- Hydration: Coconut water, broths, herbal teas
+- Plain carbohydrates: Boiled potatoes, white rice
+- Lean proteins: Chicken, boiled eggs, fish
+- Probiotic-rich foods: Yogurt, kimchi, miso (after symptoms ease)
+Avoid Foods:
+- Dairy (except yogurt) during active symptoms
+- High-fat & greasy foods
+- Caffeine, alcohol, artificial sweeteners"
+Bronchial Asthma,"Allowed Foods:
+- Antioxidant-rich foods: Carrots, sweet potatoes, leafy greens
+- Omega-3-rich foods: Salmon, walnuts, flaxseeds
+- Vitamin C foods: Oranges, berries, bell peppers
+- Magnesium-rich foods: Spinach, pumpkin seeds, bananas
+Avoid Foods:
+- Dairy (can increase mucus production)
+- Processed foods with preservatives
+- Fried and oily foods"
+Hypertension,"Allowed Foods:
+- Leafy greens: Kale, spinach, collards
+- Berries: Strawberries, blueberries, raspberries
+- Beets, bananas, and nuts (high in potassium)
+- Garlic, olive oil, dark chocolate
+- Low-fat dairy: Skim milk, yogurt
+Avoid Foods:
+- High-sodium foods: Processed meats, canned soups
+- Excess caffeine and alcohol
+- Sugary foods and trans fats"
+Migraine,"Allowed Foods:
+- Magnesium-rich foods: Almonds, spinach, avocado
+- Omega-3s: Salmon, flaxseeds, walnuts
+- Whole grains: Brown rice, quinoa, oats
+- Hydration: Coconut water, herbal teas
+Avoid Foods:
+- Aged cheese and processed meats
+- Alcohol and caffeine
+- Chocolate and artificial sweeteners"
+Cervical Spondylosis,"Allowed Foods:
+- Anti-inflammatory foods: Turmeric, ginger, green leafy vegetables
+- Omega-3-rich foods: Fatty fish, walnuts, flaxseeds
+- Calcium-rich foods: Dairy, tofu, almonds
+- Hydrating foods: Cucumber, watermelon, soups
+Avoid Foods:
+- High-fat and fried foods
+- Processed and sugary foods
+- Excess red meat"
+Paralysis (Brain Hemorrhage),"Allowed Foods:
+- Antioxidant-rich foods: Berries, spinach, nuts
+- Omega-3 fatty acids: Fatty fish, walnuts, flaxseeds
+- High-fiber foods: Oats, whole grains, beans
+- Hydration: Coconut water, fresh juices, herbal teas
+Avoid Foods:
+- High-sodium foods (can increase blood pressure)
+- Processed and fried foods
+- Excess sugar and caffeine"
+Jaundice,"Allowed Foods:
+- High-water-content foods: Coconut water, fresh fruit juices
+- Easily digestible carbs: Rice, oats, bananas
+- Lean proteins: Boiled chicken, fish, eggs
+- Green vegetables: Spinach, carrots, beetroot
+Avoid Foods:
+- Fatty and fried foods
+- Alcohol and processed meats
+- High-sugar desserts and sweets"
+Malaria,"Allowed Foods:
+- High-calorie foods: Rice, potatoes, dairy
+- Iron-rich foods: Spinach, beans, meat
+- Fluids: Fruit juices, coconut water, herbal tea
+- Protein sources: Chicken, fish, boiled eggs
+Avoid Foods:
+- Caffeine and alcohol
+- Oily and spicy foods
+- Heavy dairy products"
+Chicken Pox,"Allowed Foods:
+- Hydration: Fresh fruit juices, coconut water, herbal teas
+- Easily digestible foods: Boiled rice, mashed potatoes, soups
+- Lean proteins: Fish, chicken, lentils
+- Cooling foods: Cucumber, yogurt, watermelon
+Avoid Foods:
+- Spicy and acidic foods
+- High-sugar processed foods
+- Carbonated drinks and caffeine"
+Dengue,"Allowed Foods:
+- Hydration: Coconut water, fruit juices, herbal teas
+- High-protein diet: Chicken, fish, lentils, tofu
+- Iron-rich foods: Spinach, beets, pomegranates
+- Vitamin C-rich foods: Oranges, guava, kiwis
+Avoid Foods:
+- Oily and fried foods
+- Caffeine and sugary sodas
+- Spicy foods that can irritate digestion"
+Typhoid,"Allowed Foods:
+- Soft foods: Boiled potatoes, rice, oatmeal, soups
+- Hydration: Coconut water, lemon water, herbal teas
+- Lean proteins: Boiled chicken, eggs, lentils
+- Probiotic foods: Yogurt, buttermilk, kefir
+Avoid Foods:
+- High-fiber foods (hard to digest during recovery)
+- Spicy and fried foods
+- Carbonated drinks and alcohol"
+Hepatitis A,"Allowed Foods:
+- High-fiber foods: Whole grains, legumes, vegetables
+- Lean proteins: Chicken, fish, tofu, eggs
+- Healthy fats: Nuts, seeds, olive oil
+- Hydrating foods: Coconut water, fresh fruit juices
+Avoid Foods:
+- Alcohol & fatty foods
+- Processed meats & excessive salt
+- Fried and high-sugar foods"
+Hepatitis B,"Allowed Foods:
+- Leafy greens: Spinach, kale, watercress
+- Antioxidant-rich foods: Berries, carrots, sweet potatoes
+- Lean proteins: Fish, chicken, eggs, lentils
+- High-fiber foods: Whole grains, quinoa, oats
+Avoid Foods:
+- Alcohol & high-fat processed foods
+- Sugary drinks & deep-fried foods
+- Excess salt and preservatives"
+Hepatitis C,"Allowed Foods:
+- Liver-friendly foods: Garlic, turmeric, green tea
+- Healthy fats: Avocado, olive oil, nuts
+- Hydration: Herbal teas, fresh juices, soups
+- Lean proteins: Chicken, turkey, beans, fish
+Avoid Foods:
+- Alcohol & tobacco
+- High-fat, fried foods
+- Processed sugars & artificial sweeteners"
+Hepatitis D,"Allowed Foods:
+- Hydrating foods: Coconut water, herbal teas
+- High-protein foods: Eggs, lean meats, lentils
+- Antioxidant-rich foods: Blueberries, citrus fruits, turmeric
+- Fiber-rich foods: Quinoa, whole wheat, oats
+Avoid Foods:
+- Alcohol, processed meats, and fried foods
+- Excess salt & high-sugar foods"
+Hepatitis E,"Allowed Foods:
+- Plant-based proteins: Lentils, chickpeas, beans
+- Fruits & vegetables: Apples, carrots, green leafy vegetables
+- Whole grains: Brown rice, oats, barley
+- Low-fat dairy: Skim milk, yogurt
+Avoid Foods:
+- Red meat & fatty foods
+- Unpasteurized dairy & contaminated water
+- Processed & fried foods"
+Alcoholic Hepatitis,"Allowed Foods:
+- Liver-detoxifying foods: Beetroot, spinach, carrots
+- Lean proteins: Egg whites, fish, tofu
+- Antioxidant-rich foods: Blueberries, nuts, turmeric
+- Whole grains: Oats, brown rice, quinoa
+Avoid Foods:
+- Alcohol & carbonated beverages
+- High-fat, fried foods
+- Processed meats & sugary foods"
+Tuberculosis,"Allowed Foods:
+- High-protein diet: Chicken, fish, eggs, lentils
+- Vitamin D sources: Mushrooms, dairy, fortified cereals
+- Iron-rich foods: Spinach, legumes, nuts
+- Whole grains: Brown rice, quinoa, oats
+Avoid Foods:
+- Alcohol & excessive caffeine
+- Fried foods & high-fat meals
+- Excess sugar & processed foods"
+Common Cold,"Allowed Foods:
+- Hydration: Warm broths, herbal teas, soups
+- Immune-boosting foods: Ginger, garlic, turmeric, honey
+- Vitamin C sources: Citrus fruits, bell peppers, guavas
+- Whole grains & lean proteins: Chicken, lentils, quinoa
+Avoid Foods:
+- Dairy (can increase mucus production)
+- Fried, processed, and sugary foods
+- Excess caffeine & alcohol"
+Pneumonia,"Allowed Foods:
+- Protein-rich foods: Eggs, fish, legumes
+- Vitamin C-rich fruits: Oranges, strawberries, bell peppers
+- Leafy greens: Kale, spinach, watercress
+- Hydrating fluids: Soups, herbal teas, coconut water
+Avoid Foods:
+- High-fat dairy (may increase mucus)
+- Fried foods & processed snacks
+- Alcohol & high-caffeine beverages"
+Dimorphic Hemorrhoids (Piles),"Allowed Foods:
+- High-fiber diet: Oats, whole grains, flaxseeds
+- Hydration: Plenty of water, herbal teas, fresh fruit juices
+- Probiotic-rich foods: Yogurt, kefir, sauerkraut
+- Soft, easy-to-digest foods: Bananas, mashed potatoes, soups
+Avoid Foods:
+- Spicy and fried foods
+- Low-fiber processed foods (white bread, pasta)
+- Alcohol & excessive caffeine"
+Heart Attack,"Allowed Foods:
+- Whole grains: Oats, brown rice, quinoa
+- Leafy greens: Spinach, kale, arugula
+- Healthy fats: Olive oil, avocado, nuts
+- Lean proteins: Chicken, turkey, fish (salmon, mackerel)
+- High-antioxidant foods: Berries, dark chocolate, green tea
+Avoid Foods:
+- Trans fats: Fried foods, processed snacks
+- Excess salt & sugar
+- Red meat & processed meats"
+Varicose Veins,"Allowed Foods:
+- High-fiber foods: Whole grains, lentils, beans
+- Flavonoid-rich foods: Apples, onions, citrus fruits
+- Hydrating foods: Cucumber, watermelon, herbal teas
+- Omega-3 sources: Salmon, walnuts, flaxseeds
+Avoid Foods:
+- High-sodium foods: Canned soups, processed meats
+- Sugary snacks & soft drinks
+- Fried & oily foods"
+Hypothyroidism,"Allowed Foods:
+- Iodine-rich foods: Seaweed, fish, eggs
+- Selenium-rich foods: Brazil nuts, sunflower seeds, mushrooms
+- Zinc-rich foods: Pumpkin seeds, chickpeas, lentils
+- Lean proteins: Chicken, tofu, yogurt
+Avoid Foods:
+- Goitrogenic foods (raw cruciferous vegetables like cabbage, broccoli)
+- Processed & high-sugar foods
+- Excess caffeine & alcohol"
+Hyperthyroidism,"Allowed Foods:
+- Cruciferous vegetables: Broccoli, cabbage, kale
+- Anti-inflammatory foods: Turmeric, green tea, berries
+- High-protein diet: Chicken, fish, legumes
+- Calcium-rich foods: Dairy, fortified plant-based milk
+Avoid Foods:
+- Excess iodine: Seaweed, iodized salt
+- Caffeine & processed sugar
+- Alcohol & fried foods"
+Hypoglycemia,"Allowed Foods:
+- Complex carbohydrates: Brown rice, whole wheat bread, oats
+- Protein-rich foods: Chicken, tofu, eggs, fish
+- Healthy fats: Avocados, nuts, olive oil
+- Fiber-rich foods: Lentils, vegetables, quinoa
+Avoid Foods:
+- Simple sugars: Candy, pastries, sodas
+- Excess caffeine & alcohol
+- Skipping meals or fasting"
+Osteoarthritis,"Allowed Foods:
+- Omega-3 sources: Salmon, walnuts, flaxseeds
+- Vitamin D & calcium-rich foods: Dairy, tofu, leafy greens
+- Anti-inflammatory foods: Turmeric, ginger, green tea
+- High-fiber foods: Whole grains, beans, berries
+Avoid Foods:
+- Processed foods & refined carbs
+- Red meat & fried foods
+- Sugary snacks & excessive salt"
+Arthritis,"Allowed Foods:
+- Anti-inflammatory foods: Berries, turmeric, olive oil
+- Omega-3 sources: Fatty fish, flaxseeds, walnuts
+- High-fiber foods: Whole grains, beans, leafy greens
+- Hydration: Herbal teas, fresh juices, coconut water
+Avoid Foods:
+- Processed foods & refined carbs
+- Red meat & full-fat dairy
+- Excess salt & sugary drinks"
+(Vertigo) Paroxysmal Positional Vertigo,"Allowed Foods:
+- Magnesium-rich foods: Spinach, bananas, avocados
+- Hydrating foods: Coconut water, herbal teas, fresh fruits
+- Lean proteins: Chicken, turkey, fish
+- Antioxidant-rich foods: Berries, citrus fruits, turmeric
+Avoid Foods:
+- Caffeine & alcohol
+- Processed & high-sodium foods
+- Sugary foods & artificial sweeteners"
+Acne,"Allowed Foods:
+- Anti-inflammatory foods: Green tea, turmeric, ginger
+- Zinc-rich foods: Pumpkin seeds, lentils, chickpeas
+- Vitamin A-rich foods: Carrots, sweet potatoes, leafy greens
+- Hydrating foods: Cucumber, watermelon, coconut water
+**Avoid Foods:**
+- Dairy (especially full-fat)
+- Processed & fried foods
+- High-sugar foods & chocolate"
+Urinary Tract Infection (UTI),"Allowed Foods:
+- Cranberry juice (unsweetened), probiotic yogurt
+- Vitamin C-rich foods: Oranges, bell peppers, kiwis
+- High-water-content foods: Cucumbers, watermelon, celery
+- Herbal teas: Chamomile, green tea
+Avoid Foods:
+- Caffeine & alcohol
+- Spicy foods & artificial sweeteners
+- Sugary soft drinks & sodas"
+Psoriasis,"Allowed Foods:
+- Omega-3-rich foods: Fatty fish (salmon, mackerel), walnuts, flaxseeds
+- Anti-inflammatory foods: Turmeric, ginger, green tea
+- High-fiber foods: Whole grains, beans, leafy greens
+- Hydrating foods: Cucumber, coconut water, herbal teas
+Avoid Foods:
+- Red meat & processed foods
+- Dairy (may trigger inflammation)
+- Alcohol & sugary soft drinks"
+Impetigo,"Allowed Foods:
+- Immune-boosting foods: Citrus fruits, garlic, ginger, turmeric
+- High-protein foods: Chicken, fish, tofu, eggs
+- Whole grains: Brown rice, quinoa, oats
+- Hydration: Herbal teas, fresh fruit juices, coconut water
+Avoid Foods:
+- Fried & high-fat foods
+- Sugary snacks & sodas
+- Processed meats & artificial additives"
+Fungal Infection,"Allowed Foods:
+- Low-sugar fruits: Avocado, lemons, limes
+- Non-starchy vegetables: Broccoli, kale, spinach, tomatoes
+- Probiotic foods: Yogurt, kefir, sauerkraut, kimchi
+- Lean proteins: Chicken, turkey, fish
+- Healthy fats: Olive oil, coconut oil, nuts
+Avoid Foods:
+- Sugar & refined carbs: White bread, cakes, sodas
+- Dairy (except probiotic sources)
+- Alcohol & processed foods"

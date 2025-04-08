@@ -1,0 +1,170 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block body %}
+
+<section class="logins py-5">
+    <div class="container py-xl-5 py-lg-3">
+        {% if predictiondata %}
+        <div class="title-section mb-md-5 mb-4">
+            <h3 class="w3ls-title text-uppercase text-dark font-weight-bold">Result After Prediction</h3>
+        </div>
+        <hr/>
+        <div class="form-group row">
+            <div class="col-md-6" style="border:1px solid black;padding:6px;background:blue;color:white">
+                <label><b>Model Name</b></label>
+            </div>
+            <div class="col-md-6" style="border:1px solid black;padding:6px;background:blue;color:white">
+                <label><b>Prediction Output</b></label>
+            </div>
+            {% for i, j in predictiondata.items %}
+            <div class="col-md-6" style="border:1px solid black;padding:6px">
+                <label><b>{{ i }}</b></label>
+            </div>
+            <div class="col-md-6" style="border:1px solid black;padding:6px">
+                <label>{{ j }}</label>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <!-- Display diet plan if available -->
+        {% if diet_plan.allowed_foods or diet_plan.avoid_foods %}
+        <div class="mt-4 p-3" style="border:1px solid black;background:#f8f9fa;">
+            <h4><b>Recommended Diet Plan</b></h4>
+
+            {% if diet_plan.allowed_foods %}
+                <p><b>Allowed Foods:</b></p>
+                <ul>
+                    {% for item in diet_plan.allowed_foods %}
+                        <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+
+            {% if diet_plan.avoid_foods %}
+                <p><b>Avoid Foods:</b></p>
+                <ul>
+                    {% for item in diet_plan.avoid_foods %}
+                        <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+        {% endif %}
+
+
+
+        <!-- Buttons for additional features -->
+        <div class="text-center mt-4">
+            <a href="/nutrition_details/" class="btn btn-primary">Find Food Nutrition</a>
+        </div>
+        {% else %}
+        <div class="title-section mb-md-5 mb-4">
+            <h3 class="w3ls-title text-uppercase text-dark font-weight-bold">Select Your Problem</h3>
+        </div>
+        <hr/>
+        <div class="login px-sm-12" style="width:100%">
+            <form action="" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="row">
+                    <!-- Left Section: Symptom List with Search -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="search">Search Symptoms</label>
+                            <input type="text" id="search-symptoms" class="form-control" placeholder="Search symptoms..." onkeyup="filterSymptoms()">
+                        </div>
+                        <div id="symptom-list" class="symptom-list">
+                            {% for i in alldisease %}
+                            <div class="symptom-item" onclick="addSymptom('{{ i }}')">
+                                {{ i }}
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <!-- Right Section: Selected Symptoms -->
+                    <div class="col-md-6">
+                        <h5>Selected Symptoms</h5>
+                        <div id="selected-symptoms" class="selected-symptoms"></div>
+                    </div>
+                </div>
+
+                <!-- Container for hidden inputs -->
+                <div id="selected-symptoms-inputs"></div>
+                <button type="submit" class="btn btn-primary submit mt-4">Send Data</button>
+            </form>
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+<script>
+    let selectedSymptoms = [];
+
+    function addSymptom(symptom) {
+        if (!selectedSymptoms.includes(symptom)) {
+            selectedSymptoms.push(symptom);
+            updateSelectedSymptoms();
+        }
+    }
+
+    function removeSymptom(symptom) {
+        selectedSymptoms = selectedSymptoms.filter(item => item !== symptom);
+        updateSelectedSymptoms();
+    }
+
+    function updateSelectedSymptoms() {
+        const selectedSymptomsContainer = document.getElementById('selected-symptoms');
+        const selectedSymptomsInputs = document.getElementById('selected-symptoms-inputs');
+        
+        selectedSymptomsContainer.innerHTML = '';
+        selectedSymptomsInputs.innerHTML = '';
+
+        selectedSymptoms.forEach(symptom => {
+            selectedSymptomsContainer.innerHTML += `
+                <div class="symptom-item">
+                    ${symptom}
+                    <button type="button" onclick="removeSymptom('${symptom}')" class="btn btn-danger btn-sm ml-2">Remove</button>
+                </div>
+            `;
+            selectedSymptomsInputs.innerHTML += `
+                <input type="hidden" name="selected_symptoms" value="${symptom}">
+            `;
+        });
+    }
+
+    function filterSymptoms() {
+        const searchInput = document.getElementById('search-symptoms').value.toLowerCase();
+        const symptoms = document.querySelectorAll('.symptom-item');
+        symptoms.forEach(symptom => {
+            if (symptom.textContent.toLowerCase().includes(searchInput)) {
+                symptom.style.display = 'block';
+            } else {
+                symptom.style.display = 'none';
+            }
+        });
+    }
+</script>
+
+<style>
+    .symptom-list, .selected-symptoms {
+        border: 1px solid #ccc;
+        padding: 10px;
+        max-height: 400px;
+        overflow-y: auto;
+    }
+    .symptom-item {
+        padding: 5px;
+        border-bottom: 1px solid #eee;
+        cursor: pointer;
+    }
+    .symptom-item:hover {
+        background-color: #f0f0f0;
+    }
+    .selected-symptoms .symptom-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+
+{% endblock %}
